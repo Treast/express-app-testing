@@ -3,7 +3,7 @@ node_js:
   - '8.6.0'
 deploy:
   provider: heroku
-  api_key: "52e8a571-c434-43ad-95dd-c508fdb15285"
+  secure: "o47+qrSh58UJqFT2WEo1KMc+tJVSZVKISNi9Udedckdbm7wplvc+JDEkh+hsJ6k5Pf5LBgABvxvR+7vCIGFK02IR1V4vvMLgcll3XTIq6JFehsU8TcKRtnZFwYhn4139Nj++PspDGiHzF8aMpdxBpIB5MYZ3zt9ciIgoxndZQll456PiGGvN4wnjSSBx3FbdmHgmqxlgJmmyAsouDbQjqgd49/2Mpi9p83sIDe+CQHYgbRM7+J8FIgzyPQ/2tfIa7WoQHY0tFpbrTUpXqpA1kBs+N0MqayI2iH1mo0JkWHynqcxA6UWOUrzvdzvtm/ZMbahbH268QwpxG/8uSsSbqw52+uxwnSObuSaWfiSZdx7i9ndKQJjF5Ldp/JZF+5TuLZ/l0Kw8kfVqP3St+3/mUeyliwEx4tJEekU6IQjCFLsK/b6cl2LRVkpLwqvVS2wCdWGsiYSxZS0UAaxH9VEkb2XODXP4fvuJgfxqIvAajmVbj+pAta/78UREuYhJsiBdWAdE2DKj0nqcv5Sjk3q1T86iYRY2nbAJnedAPKF48nejJu7kJExgP2BF0PjdHovB0cUIanFjOWqAOUvNVtUJ0dL3QITlAXBLEp+z1lw9gJh47+ppJFiITLNDwABFqxivRSnWyYXjT+iUmfm3SWvUk6YwGdJm22MpfyFGn20o8q4="
   app:
     develop: express-app-staging
     master: express-app-master
