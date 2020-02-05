@@ -1,5 +1,7 @@
 # express-app-testing-demo
 
+[![Build Status](https://travis-ci.org/Treast/express-app-testing.svg?branch=master)](https://travis-ci.org/Treast/express-app-testing)
+
 This project is a simple express app for demonstrating testing and code coverage.
 [Jest](https://facebook.github.io/jest/) and
 [Supertest](https://github.com/visionmedia/supertest) are used for testing.
