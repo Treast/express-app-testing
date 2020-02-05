@@ -9,3 +9,8 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: LjlRA/ohzGfAAv91U1y2nJDBnqlmSoquRNn28Rq5jbHSsxHGp4CXVwkFxHu46FlMs6b+8vsSb758u2+YzHto22cMPjXHMwgpxT8WsIWw1wYleSBKlBSldF7p7EjFSDQpTi4OcaZ0ZTAk7qVTqseSZdn7XBPRmgen5UvjodM+GdfxXRt8NC5h/gey24g1f9OSwL0wX/3W8OW/pf69zx/IQ++ipFQnxW9dnVm5Zm+oesoOBFhZKEgX76+ypbRAxi+dzreCTesAYdHY87kYp6g+bEhbEe7yH8FzUKTjlUp7++XLOf9Na3LLhSeAEZn4Ze8RiiN/6kDS+ZAAuAnr5lPxDuDqg4lf9zI4xlNrWD/zUZKWQMrIWfT7xwYECHAQMGFxEO0cucV0cc0nz9NpmSucSb2VzGe7p2sJN7WL152fn8GEA8Cl8cPauXVGUbSnlhDH9lCxtwXR56EcpQvlaU+bTfYY08mobq98bLWg6kb0zfP3pUW9a1a4sR5Dk0gVxx7W+88AYkqypI4/1UIa1H7TjqfhQdzSoMtBBBsS3ptj4BsxW2NSa4SHQvjCqGt/ZiAvu+8lfv4Lrjpo1U4nxAgZA4qntppzRcvW/AQFEQk1a8lwzfFflyez2Mco6lqI8CS5v7lFdmJghmG1ZsLA+5xDMDYgnVHwAsg8GdQ7EV9gMEI=
+jobs:
+  include:
+    - stage: Produce Coverage
+      node_js: node
+      script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage
