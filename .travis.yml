@@ -7,3 +7,4 @@ deploy:
   app:
     develop: express-app-staging
     master: express-app-master
+  skip_cleanup: true
