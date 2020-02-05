@@ -10,6 +10,13 @@ Jest is also used for mocking functions and measuring code coverage.
 Note that this app only focuses on server-side JavaScript testing.
 
 
+## Conventions
+- Vérifier avant chaque forEach que la variable utilisée est un type array, et que la longueur du tableau est supérieure à 0
+- Utiliser ESLint et Prettier avec le preset d'AirBnb pour le formattage automatique du Javascript
+- Utiliser des polyfills Javascript pour la retropcompatibilité jusqu'à IE9
+- Tester en environnement de pré-production et demander une validation de la part du client avant de push sur l'environnement de production
+- Utiliser la nomenclature PHPDoc pour la documentation de fonction et mettre des entêtes au début des fichiers
+
 ## Requirements
 
 * Node.js - [https://nodejs.org/](https://nodejs.org/)
