@@ -1,6 +1,7 @@
 const express = require('express');
 const favicon = require('serve-favicon');
 const path = require('path');
+require('dotenv').config();
 
 const app = express();
 
@@ -16,10 +17,10 @@ app.set('view engine', 'html');
 
 // load route
 require('./route')(app);
+require('./queue');
 
 // server
 const port = process.env.PORT || 3000;
 app.server = app.listen(port);
 console.log(`listening on port ${port}`);
-
 module.exports = app;
