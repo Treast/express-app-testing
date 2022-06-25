@@ -24,7 +24,7 @@
     "got": "^8.3.2",
     "jszip": "^3.2.2",
     "moment": "^2.24.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "request": "^2.88.0",
     "serve-favicon": "^2.5.0",
     "zip-stream": "^2.1.3"
